@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<!--
+	Name: Laura Mills Nelson
+	Date: December 17, 2019
+	Class: Interactive Web I, MART 231-90, FA 2019
+-->
+
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Laura Mills Nelson - Travel</title>
+
+<!-- links stylesheet and print stylesheet -->
+<link rel="stylesheet" href="styles.css" media="screen">
+<link rel="stylesheet" href="stylesprint.css" media="print">
+
+<!-- links favicon -->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Fira+Code:700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800&display=swap" rel="stylesheet"> 
+
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="only screen and (max-width: 768px)">
+
+</head>
+
+<body>
+<div id="wrapper">
+
+<!-- Top Navigation Bar -->
+<div class="topnav">
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+	</a>
+
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+	<a class="home" href="index.html">HOME</a>
+	<a class="cooking" href="cooking.html">COOKING</a>
+	<a class="books" href="books.html">BOOKS</a>
+	<a class="hiking" href="hiking.html">HIKING</a>
+	<a class="travel" href="travel.html">TRAVEL</a>
+  </div>
+
+</div>
+
+<!-- Header on top of website -->
+<header> <h1> Laura Mills Nelson </h1>	</header>
+	
+<!--	This is the navigational bar, which displays links to 	the other pages on the website:
+-->
+
+	<nav>   
+		<ul>
+			<li class="home"> <a href="index.html">HOME</a> </li>
+		    <li class="cooking"> <a href="cooking.html">COOKING</a> </li>
+		    <li class="books"> <a href="books.html">BOOKS</a> </li>
+		    <li class="hiking"> <a href="hiking.html">HIKING</a> </li>
+		    <li class="travel"> <a href="travel.html">TRAVEL</a> </li>
+		</ul>
+	</nav>
+	<main>
+	
+	<h2> Travel </h2>
+	<p> I love to travel. I first started to travel right after high school, when a friend and I took a 3-week trip to Europe, riding the train throughout several countries. <br><br>I have since traveled on six of the seven continents and been to 17 different countries outside of the United States. Most recently (besides a quick jaunt to 
+Canada), I traveled to Switzerland in January of 2019. I think it was possibly the best trip I've taken so far. I was also able to visit the tiny country of Leichtenstein, which borders Switzerland and is the last monarchy in the Alps, ruled by Prince Hans-Adam II.
+	</p>
+	<img src="images/antique_map.jpg" alt="Antique Map of the World">
+	<p> Here is a list of the countries to which I have traveled (not in order of travel):
+	</p>
+
+<!--	This is an ordered (numbered) list of the countries I 	have traveled to:
+-->
+
+	<ol>
+		<li>Argentina</li>
+		<li>Bahamas</li>
+		<li>Brazil</li>
+		<li>Canada</li>
+		<li>China</li>
+		<li>Egypt</li>
+		<li>England</li>
+		<li>France</li>
+		<li>Germany</li>
+		<li>Ireland</li>
+		<li>Italy</li>
+		<li>Jordan</li>
+		<li>Liechtenstein</li>
+		<li>Mexico</li>
+		<li>The Netherlands</li>
+		<li>New Zealand</li>
+		<li>Switzerland</li>
+	</ol>
+	<br><br>
+	</main>
+
+<!--	
+	This section is the bottom of the page (footer) and uses a JavaScript snippet 
+	to auto update the copyright date.
+-->
+
+	<footer>
+-------------------------------------------------------------------------------------------------
+	<h6 id="copyright">Copyright &copy; 
+	<script> document.write(new Date().getFullYear());
+	</script> 
+	Laura Mills Nelson &#124; All Rights Reserved 
+	</h6>
+	</footer>
+</div>	
+
+<!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} 
+</script>
+
+</body>
+</html>

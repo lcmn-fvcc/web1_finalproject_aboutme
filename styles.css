@@ -1,0 +1,340 @@
+ 
+
+/* 	Laura Mills Nelson
+	Interactive Web I
+	December 17, 2019
+	CSS Style page for "About Me" website	
+	
+	This style sheet uses a colored leaf theme.
+
+	The three new CSS techniques that were not covered in class that I researched and applied were as follows:
+	
+	1. Text transparency
+	2. The Hamburger menu icon/drop down menu for mobile screens
+	3. The z-index property
+*/
+
+
+body
+	{
+	background-color: #2B292A;
+	color: #000000;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 1.2em;
+}
+
+/* Uses colorful leaves as background image */
+header { 	
+	background-image: url("images/colorful_leaves_desktop.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	line-height: 378px;
+	
+}
+
+h1
+	{
+	color: #FFFFFF;
+	color: hsla(0, 0%, 100%, .85);
+	line-height: 378px;
+	text-align: center;
+	font-size: 350%;
+	font-family: 'Fira Code', monospace;
+
+	}			
+
+
+/* Aligns the navigational bar links in the center of the page*/
+nav
+	{
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 110%;
+	margin-top: -50px;
+	text-align: center;
+	font-weight: bold;
+	width: 100%;
+
+	}
+
+nav li {
+	display: inline-block;
+	width: 5.25em;
+	font-size: 120%;
+	text-align: center;
+	border-style: solid;
+	border-color: #3F3F3F;
+	border-width: 5px;
+	padding: 1% 1%;
+	margin-top: 5px;
+	margin-left: -40px;
+
+
+
+}
+
+ /* unvisited link */
+a:link 
+	{
+	color: #FFFFFF;
+	text-decoration: none;
+	}
+
+/* visited link */
+a:visited 
+	{
+	color: #000000;
+	text-decoration: none;
+	}
+
+/* mouse over link */
+a:hover 
+	{
+	color: #D8D8D8;
+	text-decoration: none;
+	}
+	
+main { margin-left: 60px;
+	   margin-right: 60px; }
+
+
+p		
+	{
+	line-height: 120%;
+	}
+
+/* Indents the numbered list of countries slightly more than default*/
+ol
+	{
+	text-indent: 1em;
+	}
+
+img 
+	{ 
+	float: right;
+	border-color: #FFFFFF;
+	border-width: 10px;
+	border-style: solid;
+	box-shadow: 5px 5px 5px #828282;
+	margin: 10px 1% 20px 60px;
+	max-width: 40%;
+	height: auto;
+	}
+	
+h2	
+	{
+	color: #3F3F3F;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 200%;
+	}
+
+h3
+	{
+	color: #3F3F3F;
+	font-family: 'Nunito Sans', sans-serif;	
+	font-size: 140%;
+	}
+
+/* Uses a wrapper ID to center each page*/
+#wrapper { 	width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: #D4CDBD;
+		   }
+		
+/* Uses a class selector to make the hyperlinks on the Cooking page bold */		
+.hyperlink { font-weight: bold; }
+
+/* unvisited paragraph link */
+p a:link { 
+	color: #FFFFFF;
+	text-decoration: none;
+	}
+
+/* visited paragraph link */
+p a:visited {
+	color: #000000;
+	text-decoration: none;
+	}
+
+/* mouse over paragraph link */
+p a:hover {
+	color: #3F3F3F;
+	text-decoration: none;
+	}
+
+footer { text-align: center; }
+
+/* Uses an ID selector to italicize the copyright on each page */
+#copyright { font-style: italic;
+			 text-align: center;
+}
+
+/* The following classes make each navigational item a different color */
+.home { background-color: #D83757;
+
+		}	
+ 
+
+.cooking {	background-color: #F27A5E;
+			margin-left: -10px; 
+}
+
+.books { 	background-color: #EAAC46;
+			margin-left: -10px; 
+}
+
+.hiking { 	background-color: #959938;
+			margin-left: -10px; 
+}
+
+.travel { 	background-color: #687247;
+			margin-left: -10px; 
+}
+
+
+#welcome { text-align: center;
+			font-size: 120%;
+}
+
+#hobbies { margin-top: -25px; }
+
+/* Hide the links inside the navigation menu */
+.topnav #myLinks {
+  display: none;
+}
+
+/* makes the website responsive for tablet-sized screens */
+@media only screen and (max-width: 1024px) {
+ body { margin: 0; } 
+#wrapper { width: 95%; }
+header { 
+	background-image: url("images/colorful_leaves_tablet.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	line-height: 200px;
+ }
+	
+h1 { 
+	line-height: 200px;
+	font-size: 300%;
+	}
+
+
+nav
+	{
+	margin-top: -44px;
+	}
+
+nav li {
+	display: inline-block;
+	width: 4.85em;
+	font-size: 120%;
+	text-align: center;
+	border-width: 5px;
+	padding: 1% 1%;
+	margin-top: 5px;
+	margin-left: -40px;
+}
+
+/* Hide the links inside the navigation menu */
+.topnav /*#myLinks*/ {
+  display: none;
+}
+
+}
+
+/* makes the website responsive for mobile-sized screens */
+@media only screen and (max-width: 768px) {
+
+#wrapper { width: auto; }
+
+ /* Style the navigation menu */
+.topnav {
+  background-color: #2B292A;
+  position: relative;
+  height: 55px;
+  margin: -10px -5px;
+  z-index: 3;
+}
+
+/* Hide the links inside the navigation menu */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: #FFFFFF;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  display: block;
+  margin-left: 5px;
+  width: 80px;
+  border-style: solid;
+  border-color: #2B292A;
+  border-width: 2px;
+  
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background-color: #000000;
+  border-style: none;
+  display: block;
+  width: 15px;
+  position: relative;
+  left: 0;
+  top: 2px;
+  z-index: 3;
+
+}
+
+/* Add the beige background color on mouse-over */
+.topnav a:hover {
+  background-color: #D4CDBD;
+  color: #000000;
+}
+
+/* formats header image */
+header { 
+	position: absolute;
+	top: 45px;
+	left: 0px;
+	height: 5%;
+	width: 100%;
+	background-image: url("images/colorful_leaves_mobile.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-style: solid;
+	border-color: #2B292A;
+	border-width: 3px 5px;
+	z-index: 2;
+}
+
+h1 { font-size: 0; }
+main { 	
+	margin: 110px 5% 0px 5%;      
+    width: auto; }
+body { margin: 1%; }
+nav { display: none; }
+nav li { display: none; }
+
+/* centers image when page reaches mobile size */
+img {
+	border-width: 4px;
+	margin-left: 50%;
+	margin-right: 30%
+	
+ }
+	
+	
+	
+}
+
+
+/* creates compatibility between different browsers */
+header, main, nav, footer, figure, figcaption { display: block; }

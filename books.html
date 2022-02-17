@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<!--
+	Name: Laura Mills Nelson
+	Date: December 17, 2019
+	Class: Interactive Web I, MART 231-90, FA 2019
+-->
+
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Laura Mills Nelson - Books</title>
+
+<!-- links stylesheet and print stylesheet -->
+<link rel="stylesheet" href="styles.css" media="screen">
+<link rel="stylesheet" href="stylesprint.css" media="print">
+
+<!-- links favicon -->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Fira+Code:700&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,800&display=swap" rel="stylesheet"> 
+
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" media="only screen and (max-width: 768px)">
+
+</head>
+
+<body>
+<div id="wrapper">
+
+<!-- Top Navigation Bar -->
+<div class="topnav">
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+	</a>
+
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+	<a class="home" href="index.html">HOME</a>
+	<a class="cooking" href="cooking.html">COOKING</a>
+	<a class="books" href="books.html">BOOKS</a>
+	<a class="hiking" href="hiking.html">HIKING</a>
+	<a class="travel" href="travel.html">TRAVEL</a>
+  </div>
+
+</div>
+
+<!-- Header on top of website -->
+<header> <h1> Laura Mills Nelson </h1>	</header>
+	
+	<!--	This section displays my navigation bar with links to 	the other pages on the website
+	-->
+	
+	<nav>   
+		<ul>
+			<li class="home"> <a href="index.html">HOME</a> </li>
+		    <li class="cooking"> <a href="cooking.html">COOKING</a> </li>
+		    <li class="books"> <a href="books.html">BOOKS</a> </li>
+		    <li class="hiking"> <a href="hiking.html">HIKING</a> </li>
+		    <li class="travel"> <a href="travel.html">TRAVEL</a> </li>
+		</ul>
+	</nav>
+	<main>
+
+	<h2> Books </h2>
+	<p> I love books.<br><br> I love to read, but I also love to collect books faster than I can read them. I collect books that I either want to read or have read and loved and want to keep forever. Just seeing the covers reminds me of the stories or information they contain. I love to find used books at used book stores or thrift stores. Can't pass up a good deal on a book!
+	</p>
+	<img src="images/pile_of_books.jpg" alt="A Pile of Books">
+	<p> I wouldn't say I stick strictly to any particular genre, but I do tend to love fantasy, sci fi, dystopian novels, and historical fiction. I mostly read fiction for pleasure, but every once in a while I like a good non-fiction book.
+	<br><br>
+	Here are just a few of my favorite books of all time:
+	</p>
+
+<!--	This section displays an unordered list with standard 	bullets of some of my favorite books:
+-->
+
+	<ul>
+		<li><em>The Power of One</em> by Bryce Courtenay</li>
+		<li><em>Franny and Zooey</em> by J.D. Salinger</li>
+		<li><em>The Golden Compass Trilogy</em> by Philip Pullmam (the trilogy is actually called <em>His Dark Materials</em>, but I like the book titles better -- <em> The Golden Compass, The Subtle Knife, The Amber Spyglass)</em></li>
+		<li><em>Born to Run</em> by Christopher McDougall</li>
+		<li><em>The Omnivore's Dilemma</em> by Michael Pollan</li>
+		<li><em>The Lord of the Rings Trilogy</em> by J.R. Tolkien</li>
+		<li><em>Prodigal Summer</em> by Barbara Kingsolver</li>
+		<li><em>The Fountainhead</em> by Ayn Rand</li>
+		<li><em>The Circle</em> by Dave Eggers</li>
+		<li><em>Moloka'i</em> by Alan Brennert</li>
+		<li><em>The Night Circus</em> by Erin Morgenstern</li>
+		<li><em>Tales of a Female Nomad</em> by Rita Golden Gelman</li>
+		<li><em>Your Money or Your Life</em> by Joe Dominguez and Vicki Robin</li>
+		<li><em>The Hunger Games</em> by Suzanne Collins</li>
+		<li><em>The Runaway Jury</em> by John Grisham</li>
+		<li><em>Daring Greatly</em> by Bren&eacute; Brown</li>
+		<li><em>The Invisible Library</em> by Genevieve Cogman</li>
+	</ul>
+	<p> ... Alright, I'll stop now... </p>
+	<br><br>
+	</main>
+
+<!--	
+	This section is the bottom of the page (footer) and uses a JavaScript snippet 
+	to auto update the copyright date.
+-->
+
+	<footer>
+-------------------------------------------------------------------------------------------------
+	<h6 id="copyright">Copyright &copy; 
+	<script> document.write(new Date().getFullYear());
+	</script> 
+	Laura Mills Nelson &#124; All Rights Reserved 
+	</h6>
+	</footer>
+</div>
+
+<!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+} 
+</script>
+	
+</body>
+</html>

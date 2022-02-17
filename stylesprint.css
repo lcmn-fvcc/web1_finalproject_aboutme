@@ -1,0 +1,169 @@
+
+
+/* 	Laura Mills Nelson
+	Interactive Web I
+	December 17, 2019
+	CSS Style Page for Printing "About Me" website	
+
+*/
+
+/* changes background color to white and font-size to 12pt */
+body
+	{
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 12pt;
+	}
+	
+/* Removes background image */
+header { background-image: none; }
+
+h1
+	{
+	/*changes text to black and font-size to 30pt */
+	color: #000000;
+	text-align: center;
+	font-size: 30pt;
+	font-family: 'Fira Code', monospace;
+	border-bottom-style: solid;
+	border-bottom-color: #000000;
+	border-bottom-width: 2px;
+
+	}		
+
+/* Removes the navigational bar*/
+nav
+	{ display: none;
+
+	}
+
+nav li {
+		display: none;
+
+}
+
+.topnav { display: none; }
+
+ /* unvisited link */
+a:link 
+	{
+	color: #FFFFFF;
+	text-decoration: none;
+	}
+
+/* visited link */
+a:visited 
+	{
+	color: #000000;
+	text-decoration: none;
+	}
+
+/* mouse over link */
+a:hover 
+	{
+	color: #D8D8D8;
+	text-decoration: none;
+	}
+	
+main { margin-left: 60px;
+	   margin-right: 60px; }
+
+
+p		
+	{
+	line-height: 120%;
+	}
+
+/* Indents the numbered list of countries slightly more than default*/
+ol
+	{
+	text-indent: 1em;
+	}
+
+
+ 
+		
+
+/* reduces size of image and image border*/
+img 
+	{ 
+	float: right;
+	border-color: #FFFFFF;
+	border-width: 5px;
+	border-style: solid;
+	box-shadow: 5px 5px 5px #828282;
+	margin: 10px 1% 20px 60px;
+	height: 30%;
+	width: 30%;
+	}
+	
+/* changes font-size to 20pt */	
+h2	
+	{
+	color: #3F3F3F;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 20pt;
+	}
+
+/* changes font-size to 16pt */
+h3
+	{
+	color: #3F3F3F;
+	font-family: 'Nunito Sans', sans-serif;	
+	font-size: 16pt;
+	}
+
+/* Uses a wrapper ID to center each page*/
+#wrapper { 	width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			background-color: #D4CDBD;
+		   }
+		
+/* Uses a class selector to make the hyperlinks on the Cooking page bold */		
+.hyperlink { font-weight: bold; }
+
+/* places the web address spelled out, after intended links on the webpage */
+p a:after { content: " (" attr(href) ") ";
+				font-size: 10pt;
+				font-weight: normal;
+				color: #0614A8; }
+
+footer { text-align: center; }
+
+/* Uses an ID selector to italicize the copyright on each page */
+#copyright { font-style: italic;
+			 text-align: center;
+}
+
+
+#home { background-color: #D83757;
+
+		}	
+ 
+
+#cooking {	background-color: #F27A5E;
+			margin-left: -10px; 
+}
+
+#books { 	background-color: #EAAC46;
+			margin-left: -10px; 
+}
+
+#hiking { 	background-color: #959938;
+			margin-left: -10px; 
+}
+
+#travel { 	background-color: #687247;
+			margin-left: -10px; 
+}
+
+
+
+#welcome { text-align: center;
+			font-size: 120%;
+}
+
+
+#hobbies { margin-top: -25px; }
